@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Intro | Log In</title>
+<link rel="shortcut icon" href="img\lg.jpg">
+<link rel="stylesheet" href="style_pr.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+ 
+
+
+
+<div class="wrapper">
+    <input type="radio" name="rate" id="star-1">
+    <input type="radio" name="rate" id="star-2">
+    <input type="radio" name="rate" id="star-3">
+    <input type="radio" name="rate" id="star-4">
+    <input type="radio" name="rate" id="star-5">
+    <div class="content">
+      <div class="outer">
+        <div class="emojis">
+          <li class="slideImg"><img src="emojis/emoji-1.png" alt=""></li>
+          <li><img src="emojis/emoji-2.png" alt=""></li>
+          <li><img src="emojis/emoji-3.png" alt=""></li>
+          <li><img src="emojis/emoji-4.png" alt=""></li>
+          <li><img src="emojis/emoji-5.png" alt=""></li>
+        </div>
+      </div>
+      <div class="stars">
+        <label for="star-1" class="star-1 fas fa-star"></label>
+        <label for="star-2" class="star-2 fas fa-star"></label>
+        <label for="star-3" class="star-3 fas fa-star"></label>
+        <label for="star-4" class="star-4 fas fa-star"></label>
+        <label for="star-5" class="star-5 fas fa-star"></label>
+      </div>
+    </div>
+    <div class="footer">
+      <span class="text"></span>
+      <span class="numb"></span>
+    </div>
+  </div>
+
+
+
+<div class="container">
+         <h1 class="label">Conecteaza-te la Website-ul Tau</h1>
+         <form class="login_form" action="index_web.html" method="post" name="form" onsubmit="return validated()">
+                   <div class="font">Email Sau Nr. de Telefon</div>
+                   <input autocomplete="off" type="email" name="email">
+                   <div id="email_error">Ati scris Email-ul sau Nr. de Telefon incorect !</div>
+                   <div class="font font2">Parola</div>
+                   <input type="password" name="password">
+                   <div id="pass_error">Ati scris o parola gresita !</div>
+                   <button type="submit">Logheaza-te</button>
+          </form>
+</div>
+
+
+
+<script src="javasc.js"></script>
+</body>
+</html>
+
+

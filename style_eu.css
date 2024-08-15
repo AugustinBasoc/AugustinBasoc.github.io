@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+body{
+  background-image: url("img/bg.jpg") ;
+}
+
+.despre{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_foto{
+    width: 20%;
+    height: 80%;
+    padding: 1em;
+    background-image:url("img/eu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 9px 5px 59px 0px rgba(0,207,26,0.75);
+}
+
+.descriere{
+ background-color: lightblue;
+ width: 45%;
+ height: auto;
+ padding: 1em;
+ 
+
+ box-shadow: -9px 5px 69px 0px rgba(0,207,26,0.75);
+ border-radius: 0px 10px 10px 0px;
+}
+.descriere h1{
+    font-size: 25px;
+    background-color: transparent;
+    text-align: center;
+}
+.descriere p{
+    font-size: 24px;
+    margin: 1em 0;
+    background-color: transparent;
+}
+
+.inapoi{
+    width: 10%;
+    height: 30px;
+    margin-left: 15%;
+    background-color: #111;
+    color: white;
+    border: .5px solid white;
+    text-decoration: none;
+}
+
+.inapoi:hover{
+     border: 0px solid white;
+     cursor: pointer;
+     
+    border-bottom:1px solid rgba(0,207,26,0.75);
+}

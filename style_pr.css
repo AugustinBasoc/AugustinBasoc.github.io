@@ -1,0 +1,229 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-image: url("img/bg.jpg") ;
+  background-size: cover;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.wrapper{
+  background: #f6f6f6;
+  max-width: 360px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper .content{
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .outer{
+  height: 135px;
+  width: 135px;
+  overflow: hidden;
+}
+.outer .emojis{
+  height: 500%;
+  display: flex;
+  flex-direction: column;
+}
+.outer .emojis li{
+  height: 20%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+.outer li img{
+  height: 100%;
+  width: 100%;
+}
+#star-2:checked ~ .content .emojis .slideImg{
+  margin-top: -135px;
+}
+#star-3:checked ~ .content .emojis .slideImg{
+  margin-top: -270px;
+}
+#star-4:checked ~ .content .emojis .slideImg{
+  margin-top: -405px;
+}
+#star-5:checked ~ .content .emojis .slideImg{
+  margin-top: -540px;
+}
+.wrapper .stars{
+  margin-top: 30px;
+}
+.stars label{
+  font-size: 30px;
+  margin: 0 3px;
+  color: #ccc;
+}
+#star-1:hover ~ .content .stars .star-1,
+#star-1:checked ~ .content .stars .star-1,
+#star-2:hover ~ .content .stars .star-1,
+#star-2:hover ~ .content .stars .star-2,
+#star-2:checked ~ .content .stars .star-1,
+#star-2:checked ~ .content .stars .star-2,
+#star-3:hover ~ .content .stars .star-1,
+#star-3:hover ~ .content .stars .star-2,
+#star-3:hover ~ .content .stars .star-3,
+#star-3:checked ~ .content .stars .star-1,
+#star-3:checked ~ .content .stars .star-2,
+#star-3:checked ~ .content .stars .star-3,
+#star-4:hover ~ .content .stars .star-1,
+#star-4:hover ~ .content .stars .star-2,
+#star-4:hover ~ .content .stars .star-3,
+#star-4:hover ~ .content .stars .star-4,
+#star-4:checked ~ .content .stars .star-1,
+#star-4:checked ~ .content .stars .star-2,
+#star-4:checked ~ .content .stars .star-3,
+#star-4:checked ~ .content .stars .star-4,
+#star-5:hover ~ .content .stars .star-1,
+#star-5:hover ~ .content .stars .star-2,
+#star-5:hover ~ .content .stars .star-3,
+#star-5:hover ~ .content .stars .star-4,
+#star-5:hover ~ .content .stars .star-5,
+#star-5:checked ~ .content .stars .star-1,
+#star-5:checked ~ .content .stars .star-2,
+#star-5:checked ~ .content .stars .star-3,
+#star-5:checked ~ .content .stars .star-4,
+#star-5:checked ~ .content .stars .star-5{
+  color: #fd4;
+}
+.wrapper .footer{
+  border-top: 1px solid #ccc;
+  background: #f2f2f2;
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer span{
+  font-size: 17px;
+  font-weight: 400;
+}
+.footer .text::before{
+  content: "Cum te simti azi ?";
+}
+.footer .numb::before{
+  content: "0 din 5";
+}
+#star-1:checked ~ .footer .text::before{
+  content: "Moracanos";
+}
+#star-1:checked ~ .footer .numb::before{
+  content: "1 din 5";
+}
+#star-2:checked ~ .footer .text::before{
+  content: "Indiferent";
+}
+#star-2:checked ~ .footer .numb::before{
+  content: "2 din 5";
+}
+#star-3:checked ~ .footer .text::before{
+  content: "Bine";
+}
+#star-3:checked ~ .footer .numb::before{
+  content: "3 din 5";
+}
+#star-4:checked ~ .footer .text::before{
+  content: "Minunat";
+}
+#star-4:checked ~ .footer .numb::before{
+  content: "4 din 5";
+}
+#star-5:checked ~ .footer .text::before{
+  content: "Perfect";
+}
+#star-5:checked ~ .footer .numb::before{
+  content: "5 din 5";
+}
+input[type="radio"]{
+  display: none;
+}
+
+
+.container{
+margin-left: 40%;
+justify-content: right;
+align-content: right;
+position: relative;
+margin-top: 20px;
+width: 450px;
+height: auto;
+background: #dedede;
+border-radius: 20px;
+}
+
+.label{
+padding: 20px 130px;
+font-size: 35px;
+font-weight: bold;
+color: #130f40;
+}
+
+.login_form{
+padding: 20px 40px;
+}
+
+.login_form .font{
+font_size: 18px;
+color: #130f40;
+margin: 5px 0;
+}
+
+.login_form input{
+height: 40px;
+width: 350px;
+padding: 0 5px;
+font-size: 18px;
+outline: none;
+border: 1px solid silver;
+}
+
+.login_form .font2{
+margin-top: 30px;
+}
+
+.login_form button{
+margin: 45px 0 30px 0;
+height: 45px;
+width: 365px;
+font-size: 20 px;
+color: white;
+outline: none;
+cursor: pointer;
+font-weight: bold;
+background: #1A237E;
+border-radius: 3px;
+border: 1px solid #3949AB;
+transition: .5s;
+}
+ .login_form button:hover{
+background: #151c6a;
+}
+
+.login_form #email_error ,
+.login_form #pass_error{
+margin_top: 5 px;
+width: 345px;
+font-size: 18px;
+color: #C62828;
+background: rgba(255,0,0,0.1);
+text-align: center;
+padding: 5px 8px;
+border-radius: 3px;
+border: 1px solid #EF9A9A;
+display:none;
+}
